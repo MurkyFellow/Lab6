@@ -5,13 +5,17 @@
  */
 package com.mycompany.lab6;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  *
@@ -32,6 +36,13 @@ public class Main {
         }
         System.out.println(questions.get(0).toString());
         
+        
+        try(PrintWriter out = new PrintWriter(new OutputStreamWriter
+        (new FileOutputStream("anwser.txt"),"UTF-8"))){
+            Scanner sc = new Scanner(System.in);
+            String answer = sc.nextLine();
+            out.println(answer);
+        }
         
         
     }
