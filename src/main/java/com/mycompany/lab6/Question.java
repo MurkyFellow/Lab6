@@ -9,7 +9,6 @@ package com.mycompany.lab6;
  *
  * @author 000728303
  */
-
 //This class makes a question with a id to Identify it
 public class Question {
 
@@ -21,13 +20,13 @@ public class Question {
         this.id = id;
     }
 
-    
-    
+    public int getId() {
+        return id;
+    }
+
     @Override
     public String toString() {
-        return String.format("Question: %s, %d", text, id);
+        return String.format("%s;%d", text, id);
     }
-    
 
-    
 }

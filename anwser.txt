@@ -1,3 +1,7 @@
-woof
-13
-green
+Answer: 13 ,2
+Answer: George Washington ,4
+Answer: United Kingdom ,5
+Answer: Austin ,3
+Answer: Bald Eagle ,6
+Answer: Woof ,1
+Answer: Blue ,0

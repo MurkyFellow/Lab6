@@ -39,17 +39,19 @@ public class Main {
         }
 
         try ( PrintWriter out = new PrintWriter(new OutputStreamWriter(new FileOutputStream("anwser.txt"), "UTF-8"))) {
-            while (questions.size() != 0) {
+            while (!questions.isEmpty()) {
                 //this chooses a random question and prints it
                 int questionNum = questions.size();
                 int randomNum = (int) (Math.random() * (questionNum));
                 System.out.println(questions.get(randomNum).toString());
-                questions.remove(randomNum);
-                
+
                 //this allows the user to write a answer into a text file
-                String answer = sc.nextLine();
+                String input = sc.nextLine();
+                Answer answer = new Answer(input, questions.get(randomNum).getId());
                 out.println(answer);
+                questions.remove(randomNum);
             }
+
         }
 
     }
