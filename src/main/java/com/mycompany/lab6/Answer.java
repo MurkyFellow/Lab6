@@ -7,15 +7,8 @@ package com.mycompany.lab6;
 
 /**
  *
- * @author 000728303
+ * @author Seth
  */
-public class Question {
-    private String text;
-
-    @Override
-    public String toString() {
-        return String.format("Question: %s", text);
-    }
-    
+public class Answer {
     
 }
