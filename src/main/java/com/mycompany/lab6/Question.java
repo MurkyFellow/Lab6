@@ -14,6 +14,13 @@ public class Question {
     private String text;
     private int id;
 
+    public Question(String text, int id) {
+        this.text = text;
+        this.id = id;
+    }
+
+    
+    
     @Override
     public String toString() {
         return String.format("Question: %s, %d", text, id);

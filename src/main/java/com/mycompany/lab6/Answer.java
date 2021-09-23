@@ -10,5 +10,12 @@ package com.mycompany.lab6;
  * @author Seth
  */
 public class Answer {
+    private String text;
+
+    @Override
+    public String toString() {
+        return String.format("Answer: %s",text);
+    }
+    
     
 }
