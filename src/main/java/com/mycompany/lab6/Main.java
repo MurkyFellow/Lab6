@@ -30,7 +30,9 @@ public class Main {
             Question question = new Question(s[0],id);
             questions.add(question);
         }
-        System.out.println(questions.get(0).toString());
+        int questionNum = questions.size();
+        int randomNum = (int) (Math.random() * (questionNum));
+        System.out.println(questions.get(randomNum).toString());
         
         
         
