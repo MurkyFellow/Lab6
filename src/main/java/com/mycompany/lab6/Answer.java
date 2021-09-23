@@ -9,10 +9,19 @@ package com.mycompany.lab6;
  *
  * @author Seth
  */
+
+
+//This class will make an answer to a question with a specific ID
 public class Answer {
     private String text;
     private int questionID;
 
+    public Answer(String text, int questionID) {
+        this.text = text;
+        this.questionID = questionID;
+    }
+
+    
     @Override
     public String toString() {
         return String.format("Answer: %s ,%d",text, questionID);

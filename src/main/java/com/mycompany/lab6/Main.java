@@ -28,17 +28,20 @@ public class Main {
         List<String> lines = Files.readAllLines(path,cs);
         List<Question> questions= new ArrayList<>();
         
+        //This reads in the file and makes a new question object
         for(String line : lines){
             String []s = line.split(";");
             int id = Integer.parseInt(s[1]);
             Question question = new Question(s[0],id);
             questions.add(question);
         }
+        
+        //this chooses a random question and prints it
         int questionNum = questions.size();
         int randomNum = (int) (Math.random() * (questionNum));
         System.out.println(questions.get(randomNum).toString());
         
-        
+        //this allows the user to write a answer into a text file
         try(PrintWriter out = new PrintWriter(new OutputStreamWriter
         (new FileOutputStream("anwser.txt"),"UTF-8"))){
             Scanner sc = new Scanner(System.in);
