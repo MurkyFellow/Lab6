@@ -11,10 +11,11 @@ package com.mycompany.lab6;
  */
 public class Answer {
     private String text;
+    private int questionID;
 
     @Override
     public String toString() {
-        return String.format("Answer: %s",text);
+        return String.format("Answer: %s ,%d",text, questionID);
     }
     
     
