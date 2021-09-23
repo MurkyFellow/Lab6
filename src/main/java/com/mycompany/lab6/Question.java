@@ -10,5 +10,10 @@ package com.mycompany.lab6;
  * @author 000728303
  */
 public class Question {
+    private int id;
     
+    @Override
+    public String toString(){
+        return String.format("Question: %s", id);
+    }
 }
