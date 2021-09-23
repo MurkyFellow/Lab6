@@ -1,3 +1,7 @@
 What color is the sky;0
 What sound does a dog make;1
 How many stripes are on the USA flag;2
+What is the capital of Texas;3
+Who was the 1st president of the USA;4
+Where is London located;5
+What is the national bird;6
