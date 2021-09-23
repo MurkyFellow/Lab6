@@ -45,7 +45,8 @@ public class Main {
         try(PrintWriter out = new PrintWriter(new OutputStreamWriter
         (new FileOutputStream("anwser.txt"),"UTF-8"))){
             Scanner sc = new Scanner(System.in);
-            String answer = sc.nextLine();
+            String input = sc.nextLine();
+            Answer answer = new Answer(input,questions.get(randomNum).getId());
             out.println(answer);
         }
         
